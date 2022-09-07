@@ -1,0 +1,25 @@
+<Grid item xs={6}>
+                                        <FormControl  variant="outlined">
+                                            <OutlinedInput
+                                                id="outlined-adornment-password"
+                                                type={cvalues.showPassword ? 'text' : 'password'}
+                                                value={cvalues.password}
+                                                onChange={handleConfirmChange('password')}
+                                                endAdornment={
+                                                    <InputAdornment position="end">
+                                                        <IconButton
+                                                            aria-label="toggle password visibility"
+                                                            onClick={handleClickShowCPassword}
+                                                            onMouseDown={handleMouseDownCPassword}
+                                                            edge="end"
+                                                        >
+                                                            {cvalues.showPassword ? <VisibilityOff /> : <Visibility />}
+                                                        </IconButton>
+                                                    </InputAdornment>
+                                                }
+                                                placeholder='Confirm Password'
+                                                size="small"
+                                                style={{ width: 250 }}
+                                            />
+                                        </FormControl>
+                                        </Grid>
